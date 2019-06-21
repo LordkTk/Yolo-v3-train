@@ -62,7 +62,7 @@ def post_process(class_probsTotal, obj_probsTotal, bboxTotal, batchSize):
                     bbox2_area = (bbox[coor[0], coor[1], 3] - bbox[coor[0], coor[1], 1]) * (bbox[coor[0], coor[1], 2] - bbox[coor[0], coor[1], 0])
                     uni_area = bbox1_area + bbox2_area - int_area
                     iou = int_area / uni_area
-                    if iou > 0.4: ###########################################################################################
+                    if iou > 0.5: ###########################################################################################
                         sign = 1
                         break
             if sign == 0:
