@@ -5,7 +5,7 @@ train yolo-v3 for your own dataset
 
 1. There are some minor improvements in the code compared to that in my another repo ([v3-tiny](https://github.com/LordkTk/Yolo-v3-tiny-train)), but the functions of the files are the same.
 
-2. During training, i only used warm-up and first-stage for training, i.e., only the detection part of the net was trained. I did in this way because the full net is so large that my poor computation resource didn't let me train it fully. If permitting you can train the whole net and the performance of the model can be further improved.
+2. During training, i only used warm-up and first-stage for training, i.e., only the detection part of the net was trained, and i didn't enable multi-scale training. I did in this way because the full net is so large that i couldn't train it fully because of my poor computation resource. If permitting you can train the whole net and the performance of the model can be further improved.
 
 ### Parameters setting:
 
@@ -15,9 +15,9 @@ I didn't experiment carefully but desirable results can be obtained with followi
 
 --focal loss: None;
 
---epoch_num: warm-up: 3, first-stage: 20.
+--epoch_num: warm-up: 5, first-stage: 95.
 
-The model gets an mAP of 50.2 on the test dataset of VOC 2012 (i get the test dataset by randomly dividing the full dataset to train and test parts, and the test part has 1000 imgs). The model's performance can be improved by adjusting parameters carefully, as well as adopting muiti-scale training and data augmentation.
+The model is trained on the VOC 2007+2012 trainval dataset and gets an mAP of 72.3 on the test dataset of VOC 2007. The model's performance can be improved by adjusting parameters carefully, as well as adopting other tricks such as muiti-scale training. Note that data augmentation is very important for good performance.
 
 ### Results:
 
