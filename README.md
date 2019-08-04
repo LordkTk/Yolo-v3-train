@@ -23,14 +23,12 @@ The model gets an mAP of 50.2 on the test dataset of VOC 2012 (i get the test da
 
 Some of the test results are shown below (with conf_threshold = 0.5 and iou_threshold = 0.5):
 
-![Image text](imgs/0.jpg)
+![Image text](imgs/sample_1.jpg)
 
-![Image text](imgs/1.jpg)
+![Image text](imgs/sample_2.jpg)
 
-![Image text](imgs/2.jpg)
+![Image text](imgs/sample_3.jpg)
 
-![Image text](imgs/3.jpg)
-
-![Image text](imgs/4.jpg)
+![Image text](imgs/sample_4.jpg)
 
 The results are much better than those obtained with [v3-tiny](https://github.com/LordkTk/Yolo-v3-tiny-train), though for tiny the whole net was trained.
