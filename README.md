@@ -13,7 +13,7 @@ I didn't experiment carefully but desirable results can be obtained with followi
 
 --initial learning rate = 1e-4;
 
---focal loss: None;
+--focal loss: alp = 1, gamma = 2;
 
 --epoch_num: warm-up: 5, first-stage: 95.
 
