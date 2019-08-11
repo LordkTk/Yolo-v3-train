@@ -17,7 +17,7 @@ I didn't experiment carefully but desirable results can be obtained with followi
 
 --epoch_num: warm-up: 5, first-stage: 95.
 
-The model is trained on the VOC 2007+2012 trainval dataset and gets an mAP of 72.3 on the test dataset of VOC 2007. The model's performance can be improved by adjusting parameters carefully, as well as adopting other tricks such as muiti-scale training. Note that data augmentation is very important for good performance.
+The model is trained on the VOC 2007+2012 trainval dataset and gets an mAP of 75.81 on the test dataset of VOC 2007. The model's performance can be improved by adjusting parameters carefully, as well as adopting other tricks such as muiti-scale training. Note that data augmentation is very important for good performance.
 
 ### Results:
 
